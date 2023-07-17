@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Pages.AccountPage"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Welcome Hamid"
+        android:textColor="@color/white"
+        android:layout_margin="@dimen/standard_margin_size"
+        android:id="@+id/welcome_text"
+        android:fontFamily="@font/bitter_extra_bold_italic"
+        android:textSize="@dimen/standard_font_size"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/movies_button"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/welcome_text"
+        android:layout_marginTop="24dp"
+        android:layout_centerHorizontal="true"
+        android:text="Movies"
+        android:textAllCaps="false"
+        android:background="@color/gray"
+        android:textColor="@color/white"
+        android:fontFamily="@font/dm_serif_display_italic"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/movies_button"
+        android:layout_marginTop="50dp"
+        android:text="Watch list"
+        android:textAllCaps="false"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/watch_list_button"
+        android:background="@color/gray"
+        android:textColor="@color/white"
+        android:fontFamily="@font/dm_serif_display_italic"
+        />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/watch_list_button"
+        android:layout_marginTop="60dp"
+        android:id="@+id/favorite_lists_name"
+        android:popupBackground="@color/gray"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/favorite_lists_name"
+        android:text="Add Favorite lists"
+        android:textAllCaps="false"
+        android:layout_marginStart="@dimen/standard_margin_size"
+        android:id="@+id/add_favorite_list_button"
+        android:background="@color/gray"
+        android:textColor="@color/white"
+        android:fontFamily="@font/dm_serif_display_italic"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/favorite_lists_name"
+        android:layout_toEndOf="@id/add_favorite_list_button"
+        android:text="Show Movies"
+        android:textAllCaps="false"
+        android:layout_marginStart="@dimen/standard_margin_size"
+        android:id="@+id/show_favorite_movies_button"
+        android:background="@color/gray"
+        android:textColor="@color/white"
+        android:fontFamily="@font/dm_serif_display_italic"
+        />
+
+</RelativeLayout>

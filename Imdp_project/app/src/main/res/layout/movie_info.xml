@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Pages.MovieInfoPage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/standard_margin_size"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/arrow_back"
+                android:id="@+id/movie_info_back_button"
+                android:layout_marginEnd="100dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="20 Century"
+                android:textSize="@dimen/texts_size"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginBottom="@dimen/standard_margin_size"
+                android:id="@+id/movie_info_title"
+                android:fontFamily="@font/artbrush"
+                />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:src="@drawable/ic_launcher_background"
+            android:adjustViewBounds="true"
+            android:id="@+id/movie_info_image"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="original title : قرن 20"
+            android:textSize="@dimen/texts_size"
+            android:textColor="@color/white"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="@dimen/standard_margin_size"
+            android:id="@+id/movie_info_original_title"
+            android:fontFamily="@font/dm_serif_display_italic"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="rating : 8.75"
+            android:textSize="@dimen/texts_size"
+            android:textColor="@color/white"
+            android:id="@+id/movie_info_rating"
+            android:fontFamily="@font/dm_serif_display_italic"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="vote number : 1157"
+            android:textSize="@dimen/texts_size"
+            android:textColor="@color/white"
+            android:layout_marginBottom="@dimen/standard_margin_size"
+            android:id="@+id/movie_info_vote_num"
+            android:fontFamily="@font/dm_serif_display_italic"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="genre : drama"
+            android:textSize="@dimen/texts_size"
+            android:textColor="@color/white"
+            android:layout_marginBottom="@dimen/standard_margin_size"
+            android:id="@+id/movie_info_genre"
+            android:fontFamily="@font/dm_serif_display_italic"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="time : 112 min"
+            android:textSize="@dimen/texts_size"
+            android:textColor="@color/white"
+            android:layout_marginBottom="@dimen/standard_margin_size"
+            android:id="@+id/movie_info_time"
+            android:fontFamily="@font/dm_serif_display_italic"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="year : 2018"
+            android:textSize="@dimen/texts_size"
+            android:textColor="@color/white"
+            android:layout_marginBottom="@dimen/standard_margin_size"
+            android:id="@+id/movie_info_year"
+            android:fontFamily="@font/dm_serif_display_italic"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="region : Iran"
+            android:textSize="@dimen/texts_size"
+            android:textColor="@color/white"
+            android:layout_marginBottom="@dimen/standard_margin_size"
+            android:id="@+id/movie_info_region"
+            android:fontFamily="@font/dm_serif_display_italic"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="language : persian"
+            android:textSize="@dimen/texts_size"
+            android:textColor="@color/white"
+            android:layout_marginBottom="@dimen/standard_margin_size"
+            android:id="@+id/movie_info_language"
+            android:fontFamily="@font/dm_serif_display_italic"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="director : Hamid"
+            android:textSize="@dimen/texts_size"
+            android:textColor="@color/white"
+            android:layout_marginBottom="@dimen/standard_margin_size"
+            android:id="@+id/movie_info_director"
+            android:fontFamily="@font/dm_serif_display_italic"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="writer : Javad"
+            android:textSize="@dimen/texts_size"
+            android:layout_marginBottom="@dimen/standard_margin_size"
+            android:id="@+id/movie_info_writer"
+            android:textColor="@color/white"
+            android:fontFamily="@font/dm_serif_display_italic"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="actors : Hamid mehranfar"
+            android:textSize="@dimen/texts_size"
+            android:layout_marginBottom="@dimen/standard_margin_size"
+            android:id="@+id/movie_info_actors"
+            android:textColor="@color/white"
+            android:fontFamily="@font/dm_serif_display_italic"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="overview : this movie is about some korean kids"
+            android:textSize="@dimen/texts_size"
+            android:textColor="@color/white"
+            android:layout_marginTop="@dimen/standard_margin_size"
+            android:layout_marginBottom="@dimen/standard_margin_size"
+            android:id="@+id/movie_info_overview"
+            android:fontFamily="@font/bitter_extra_bold_italic"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Comments"
+            android:layout_marginTop="50dp"
+            android:textColor="@color/white_blue"
+            android:fontFamily="@font/artbrush"
+            android:textSize="@dimen/standard_font_size"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Hamid : this is bad movie"
+            android:layout_marginTop="@dimen/standard_margin_size"
+            android:textSize="20sp"
+            android:textColor="@color/dark_blue"
+            android:id="@+id/movie_info_comments"
+            android:fontFamily="@font/dm_serif_display_italic"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/standard_margin_size"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/standard_margin_size"
+            >
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add comment"
+                android:textAllCaps="false"
+                android:layout_marginTop="@dimen/standard_margin_size"
+                android:id="@+id/add_comment_button"
+                android:fontFamily="@font/bitter_extra_bold_italic"
+                android:textColor="@color/white"
+                android:background="@color/gray"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add rating"
+                android:textAllCaps="false"
+                android:id="@+id/add_rating_button"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="@dimen/standard_margin_size"
+                android:fontFamily="@font/bitter_extra_bold_italic"
+                android:textColor="@color/white"
+                android:background="@color/gray"
+                />
+
+        </LinearLayout>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/standard_margin_size"
+            android:id="@+id/other_favorite_lists"
+            android:popupBackground="@color/gray"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Favorite List"
+            android:layout_marginTop="@dimen/standard_margin_size"
+            android:layout_marginBottom="@dimen/standard_margin_size"
+            android:id="@+id/show_other_favorite_lists"
+            android:background="@color/gray"
+            android:textColor="@color/white"
+            android:fontFamily="@font/dm_serif_display_italic"
+            />
+
+    </LinearLayout>
+
+</ScrollView>

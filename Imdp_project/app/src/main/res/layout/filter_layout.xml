@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/filter_part"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:background="@color/gray"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        >
+
+        <EditText
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Year"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:id="@+id/year_filter"
+            android:fontFamily="@font/dm_serif_display_italic"
+            />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Year"
+            android:textColor="@color/white"
+            android:id="@+id/year_check"
+            android:fontFamily="@font/artbrush"
+            />
+
+        <EditText
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="Genre"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:id="@+id/genre_filter"
+            android:layout_marginStart="30dp"
+            android:fontFamily="@font/dm_serif_display_italic"
+            />
+
+        <CheckBox
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:text="Genre"
+            android:textColor="@color/white"
+            android:id="@+id/genre_check"
+            android:fontFamily="@font/artbrush"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        >
+
+        <EditText
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:inputType="none"
+            android:hint="Star"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:id="@+id/stars_filter"
+            android:fontFamily="@font/dm_serif_display_italic"
+            />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Star"
+            android:textColor="@color/white"
+            android:id="@+id/stars_check"
+            android:fontFamily="@font/artbrush"
+            />
+
+        <EditText
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:inputType="none"
+            android:hint="Country"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:id="@+id/country_filter"
+            android:layout_marginStart="30dp"
+            android:fontFamily="@font/dm_serif_display_italic"
+            />
+
+        <CheckBox
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:text="Country"
+            android:textColor="@color/white"
+            android:id="@+id/country_check"
+            android:fontFamily="@font/artbrush"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="@dimen/standard_margin_size"
+        >
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Set Filter"
+            android:id="@+id/set_filter_button"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:background="@color/black"
+            android:layout_marginEnd="50dp"
+            android:fontFamily="@font/dm_serif_display_italic"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Take Filter"
+            android:id="@+id/take_filter_button"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:background="@color/black"
+            android:fontFamily="@font/dm_serif_display_italic"/>
+
+    </LinearLayout>
+
+</LinearLayout>
